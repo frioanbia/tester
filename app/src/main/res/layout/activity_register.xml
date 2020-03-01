@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register.RegisterActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@drawable/iconregister" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="@string/view7"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/textInput"
+    android:layout_below="@+id/txt1"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="18dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_person_black_24dp"
+            android:drawablePadding="@dimen/margin_8"
+            android:hint="@string/view8" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInput2"
+        android:layout_below="@+id/textInput"
+        android:layout_width="match_parent"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="18dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_call_black_24dp"
+            android:drawablePadding="@dimen/margin_8"
+            android:hint="@string/no_handphone"
+            android:inputType="numberSigned" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+    android:id="@+id/textInput3"
+    android:layout_below="@+id/textInput2"
+    android:layout_width="match_parent"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="18dp"
+    android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_mail_outline_black_24dp"
+            android:drawablePadding="@dimen/margin_8"
+            android:hint="@string/view9" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInput4"
+        android:layout_below="@+id/textInput3"
+        android:layout_width="match_parent"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="18dp"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_lock_black_24dp"
+            android:drawablePadding="@dimen/margin_8"
+            android:hint="@string/view10" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_berikutnya"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textInput4"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/bg_color"
+        android:fontFamily="@font/itim"
+        android:hint="Berikutnya"
+        android:textColor="@color/colorAppbar3"
+        android:textColorHint="@color/design_default_color_on_secondary" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_berikutnya"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="12dp"
+        android:text="Sudah punya account?" />
+
+    <TextView
+        android:id="@+id/txt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt2"
+        android:layout_centerInParent="true"
+        android:layout_margin="12dp"
+        android:text="Masuk"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Tester</string>
+    <string name="label">Pilih tipe merchant</string>
+    <string name="no_handphone">No Handphone </string>
+    <string name="view">Dengan mendaftar atau masuk, anda setuju dengan</string>
+    <string name="view1">Masuk</string>
+    <string name="view4">Syarat dan ketentuan</string>
+    <string name="view5">Lupa Kata Sandi ?</string>
+    <string name="view6">Pilih yang ingin anda gunakan pada aplikasi ini ?</string>
+    <string name="view7">Register</string>
+    <string name="view8">Nama</string>
+    <string name="view9">Email</string>
+    <string name="view10">Masukan kode agen</string>
+    <string name="mengapa_saya_harus_menentukan_online_merchant_dan_umkm">Mengapa saya harus menentukan Online Merchant dan UMKM ?</string>
+
+</resources>

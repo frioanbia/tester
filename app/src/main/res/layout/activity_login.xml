@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:padding="14dp"
+    tools:context=".Login.LoginActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="2dp"
+        app:srcCompat="@drawable/login" />
+
+    <TextView
+        android:id="@+id/txt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageView"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="25dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="@string/view1"
+        android:layout_marginBottom="20dp"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/view"
+        style="@style/ShapeAppearanceOverlay.MaterialComponents.TextInputLayout.FilledBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt1"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="8dp"
+        app:boxBackgroundColor="@color/colorOrange">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/txt_nohp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:cursorVisible="true"
+            android:drawableLeft="@drawable/ic_call_black_24dp"
+            android:drawablePadding="8dp"
+            android:filterTouchesWhenObscured="true"
+            android:fontFamily="@font/comfortaa_light"
+            android:hint="@string/no_handphone"
+            android:inputType="numberSigned"
+            android:phoneNumber="true"
+            android:scrollbarAlwaysDrawHorizontalTrack="false"
+            android:singleLine="false"
+            android:visibility="visible" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/view"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="14dp"
+        android:background="@drawable/bg_color"
+        android:fontFamily="@font/itim"
+        android:text="Masuk"
+        android:textAllCaps="false"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textIsSelectable="true"
+        android:textSize="18sp" />
+
+    <Button
+        android:id="@+id/btn_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btn_login"
+        android:layout_marginStart="14dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="8dp"
+        android:background="@drawable/bg_color"
+        android:fontFamily="@font/itim"
+        android:text="Registrasi"
+        android:textColor="@color/design_default_color_on_secondary"
+        android:textIsSelectable="true"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txt2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@id/btn_register"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="15dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="@string/view"
+        android:gravity="center"
+        android:textSize="12dp" />
+
+<!--    <TextView-->
+<!--        android:id="@+id/txt3"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="40dp"-->
+<!--        android:layout_below="@+id/txt2"-->
+<!--        android:layout_centerInParent="true"-->
+<!--        android:layout_marginTop="-12dp"-->
+<!--        android:fontFamily="@font/comfortaa_light"-->
+<!--        android:text="@string/view3" />-->
+
+    <TextView
+        android:id="@+id/txt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt2"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="@string/view4"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt4"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/comfortaa_light"
+        android:text="@string/view5" />
+
+</RelativeLayout>

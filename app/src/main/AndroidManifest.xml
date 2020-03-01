@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="id.frio.kasir">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme.NoActionBar"
+        tools:ignore="AllowBackup,GoogleAppIndexingWarning">
+
+        <activity android:name=".Dashboard.DashboardActivity"
+            android:theme="@style/AppTheme"
+            android:label="Dashboard"
+            tools:ignore="InnerclassSeparator" />
+
+<!--        </activity>-->
+        <activity
+            android:name=".Register.RegisterActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="InnerclassSeparator" />
+        <activity
+            android:name=".Pilihan2.Pilihan2Activity"
+            android:label="@string/label"
+            android:theme="@style/AppTheme"
+            tools:ignore="InnerclassSeparator" /> <!-- <activity android:name=".Login.LoginActivity" /> -->
+        <activity
+            android:name=".Login.LoginActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/fullScreen"
+            tools:ignore="ExtraText,InnerclassSeparator">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>
